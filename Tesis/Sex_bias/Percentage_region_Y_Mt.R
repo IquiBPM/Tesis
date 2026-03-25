@@ -92,7 +92,7 @@ ggplot(FY2, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Región)) +
   theme_void() +
   ggtitle("Haplogrupos del DNA Mt con mayor porcentaje de aparición")
 
-#Tabla de porcentajes Mt
+#Tabla de porcentajes
 HY<-strsplit(x=popPY$Haplogrupo,split = "")
 HY2<-lapply(HY, '[', 1)
 HYF<-lapply(HY2, FUN=paste, collapse="")
